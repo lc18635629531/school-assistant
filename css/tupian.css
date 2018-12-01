@@ -1,0 +1,21 @@
+#my_tupian .carousel-indicators li{
+    width: 4rem;
+    height: 0.6rem;
+
+}
+#my_tupian .carousel-indicators .active{
+    background: #0aa1ed;
+}
+#my_tupian .carousel-control-prev,
+#my_tupian .carousel-control-next{
+    width: 5%;
+    height:20%;
+    top: 45%;
+    background: #dddddd;
+}
+div.container .row .col-lg-6 div.mt-4 div{
+    width:255px;
+}
+div.container .row .col-lg-6 div.datu img{
+    height:564px;
+}

@@ -1,0 +1,234 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .detail_head{
+            margin: 0;
+            padding: 0;
+            display: block;
+            zoom: 1;
+        }
+        .detail_name{
+            line-height: 30px;
+            font-size: 20px;
+            margin: 10px auto 0 auto;
+            width: 1000px;
+            display: block;
+        }
+        .detail_name a{
+            text-decoration: none;
+            color:#444;
+        }
+        .detail_nav{
+            display: block;
+            border-top: 1px solid #fefefe;
+            border-bottom: 1px solid #eee;
+            background: #fbfbfb;
+            font-size: 12px;
+            line-height: 150%;
+        }
+        .detail_navtabs{
+            height:40px;
+            line-height: 40px;
+            width: 1000px;
+            list-style: none;
+            display: block;
+            margin: 0 auto;
+        }
+        .detail_navtabs li{
+            float: left;
+            font-size: 14px;
+            display: list-item;
+            line-height: 40px;
+        }
+        .detail_navtabs li a{
+            color:#888;
+            padding: 10px 10px 9px 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .detail_navtabs li a.focus{
+            color:#f09199;
+            border-bottom: 2px solid #f09199;
+        }
+        .person_main{
+            width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+            font-size: 12px;
+            line-height: 150%;
+        }
+        .person_main .person_detail{
+            padding: 0 0 10px 0;
+            width: 1000px;
+        }
+        .person_main .person_detail .person_detail_left{
+            margin: 10px 15px 0 0;
+            width: 250px;
+            float: left;
+        }
+        
+        .person_photo{
+            width:200px;
+            height:200px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: block;
+        }
+        .person_photo a{
+            text-decoration: none;
+            color: #444;
+            cursor: pointer;
+        }
+        .person_photo a img{
+            width:100%;
+            background-color: #fff;
+            margin-bottom: 5px;
+            padding: 2px;
+            border-top: 1px solid #c7c7c7;
+            border-left: 1px solid #a9a9a9;
+            border-right: 1px solid #a9a9a9;
+            border-bottom: 1px solid #858585;
+            box-shadow: 0 1px 5px #aaa;
+        }
+        .infobox{
+            list-style: none;  
+            margin-top: 20px; 
+        }
+        .infobox li{
+            padding: 4px 2px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+            display: list-item;
+        }
+        .infobox li .detail_info{
+            font-size: 13px;
+            color: #666;
+            line-height: 150%;
+        }
+        .person_detail_right{
+            margin: 10px 0 0 0;
+            width: 720px;
+            float: left;
+            padding: 0;
+            display: block;
+        }
+        .person_school{
+            zoom: 1;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+        .school_name{
+            font-weight: 300;
+            color: #555;
+            font-size: 18px;
+            padding: 0 5px 0 0;
+            line-height: 140%;
+        }
+        .person_detail_info{
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 180%;
+            color: #555;
+            padding: 10px 0;
+        }
+        
+        .new_task_list li>div div{
+            margin-left: 65px;
+        }
+        .new_task_list li>div div>h3{
+            font-weight: normal;
+            font-size:13px;
+        }
+        .new_task_list li>div div>h3 a{
+            color:#008484;
+            border:0;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .new_task_list li>div div>h3 p{
+            font-size: 12px;
+            color:#666;
+        }
+        .person_detail_right a{
+            color: #1175a8;
+            border:0;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .new_task,.old_task{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            color:#555;
+            font-size: 18px;
+            padding: 0 5px 0 0;
+            line-height: 140%;
+        }
+        .new_task_list,.old_task_list{
+            margin-bottom: 20px;
+            list-style: none;
+        }
+        .new_task_list li,.old_list_item{
+            width:720px;
+            height:50px;
+            border-bottom: 1px solid #eaeaea;
+            padding: 7px 5px;
+            position: relative;
+            background: #f9f9f9;
+            border-top: 1px solid #fafafa;
+            zoom: 1;
+        }
+        .new_task_list li>div,.old_list_item>div{
+            width: 720px;
+            float: left;
+        }
+        .new_task_list li>div>a,.old_list_item>div>a{
+            display: block;
+            height:50px;
+            width:50px;
+            overflow: hidden;
+            padding: 2px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color:#444;
+            float: left;
+            cursor: pointer;
+        }
+        .new_task_list li>div>a img,.old_list_item>div>a>img{
+            margin-bottom: 0;
+            width:100%;
+            background-color: #fff;
+            border-top: 1px solid #c7c7c7;
+            border-left: 1px solid #a9a9a9;
+            border-right: 1px solid #a9a9a9;
+            border-bottom: 1px solid #858585;
+            box-shadow: 0 1px 5px #aaa;
+        }
+        .old_list_item>div div{
+            margin-left: 65px;
+            height: 50px;
+        }
+        .old_list_item>div div>a{
+            color:#008484;
+            border:0;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: normal;
+            font-size: 13px;
+        }
+        .old_list_item>div div .player{
+            width:36px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background:#369cf8;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-top: 4px
+        }

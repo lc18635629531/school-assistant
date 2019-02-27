@@ -1,0 +1,45 @@
+
+    *{
+        padding:0;
+        margin:0;
+    }
+    .container{
+        margin:0 auto;
+    }
+    .container>h2{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 10px 10px 50px #bbb;
+    }
+    .cases_area{
+        width:700px;
+        margin:0 auto;
+        margin-top: 20px;
+        
+    }
+    .title,.school,.person,.address,.email,.details{
+        margin-bottom: 15px;
+        animation:change 10s linear 0s infinite;
+        font-size:20px;
+        font-weight:700;
+    }
+    @keyframes change{0%   {color:#333;}25%{color:#ff0;}50%{color:#f60;}75%{color:#cf0;}100% {color:#f00;}}
+    .apply{
+        display: block;
+        border:1px solid #333;
+        border-radius: 20%;
+        width:200px;
+        height:80px;
+        text-align: center;
+        color:yellow;
+        font-size: 40px;
+        line-height: 80px;
+        list-style: none;
+        text-decoration: none;
+        margin:0 auto;
+        margin-top: 20px;
+        background: -webkit-linear-gradient(red, blue); 
+        background: -o-linear-gradient(red, blue); 
+        background: -moz-linear-gradient(red, blue); 
+        background: linear-gradient(red, blue); 
+    }

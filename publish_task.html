@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>Title</title>
+  <link rel="stylesheet" href="css/a_t.css" />
+</head>
+<body>
+<div class="container">
+  <h4 style="font-size:16px; text-align:center; font-weight:bold;">任务发布表</h4>    
+<br /><br />
+<!--中心-->
+<div class="content">
+	<div class="register-box">
+		<div class="wrap">
+			<div class="register-box-con2">             	
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian">*</em>学校名称</label>
+					<div class="register-box-con2-box-right">
+						<input type="text" class="login-box-cen-form-input w358" placeholder="请输入你所在学校名称，不超过20个字" id="reg_info_company">
+						<label id="reg_info_company_text"  class="err err-top40">请输入你所在学校名称，不超过20个字</label>
+					</div>
+				</div>
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian"></em>学校网址</label>
+					<div class="register-box-con2-box-right">
+						<input type="text" class="login-box-cen-form-input w358" placeholder="请输入正确的网址" id="reg_info_www" />
+						<label class="err err-top40" id="reg_info_www_text">请输入正确的网址</label>
+					</div>
+				</div>
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian"></em>现居住地址</label>
+					<div class="register-box-con2-box-right">
+						<input type="text" class="login-box-cen-form-input w358" placeholder="个人现居住地址，不超过40个字" id="reg_info_address" />
+						<label class="err err-top40" id="reg_info_address_text">个人现居住地址，不超过40个字</label>
+					</div>
+				</div>
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian"></em>任务简介</label>
+					<div class="register-box-con2-box-right">
+						<textarea class="login-box-cen-form-textarea w358 h88" id="reg_info_textarea" placeholder="简介不超过200个字.....（包括任务类型，任务地点，合作伙伴，任务时长，难度系数，积分）"></textarea>
+						<label class="err err-top90" id="reg_info_textarea_text">简介不超过200个字.....（包括任务类型，任务地点，合作伙伴，任务时长，难度系数，积分）</label>
+					</div>
+				</div>
+				
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian">*</em>联系人</label>
+					<div class="register-box-con2-box-right">
+						<input type="text" class="login-box-cen-form-input w358" placeholder="请输入本人的真实姓名，不能超过20个字" id="reg_info_name" />
+						<label class="err err-top40" id="reg_info_name_text">请输入本人的真实姓名，不能超过20个字</label>
+					</div>
+				</div>
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian">*</em>Email地址</label>
+					<div class="register-box-con2-box-right">
+						<input type="text" class="login-box-cen-form-input w358" placeholder="请输入有效邮箱，用于接收平台审核等重要消息通知" id="reg_info_email" />
+						<label class="err err-top40" id="reg_info_email_text">请输入有效邮箱，用于接收平台审核等重要消息通知</label>
+					</div>
+				</div>
+				<div class="register-box-con2-box clearfix mar-bottom20">
+					<label class="register-box-con2-box-left"><em class="bitian">*</em>图片</label>
+					<div class="register-box-con2-box-right">
+						<label class="register-box-con2-box-upload">
+							<input type="file" name="file" id="reg_info_file" />
+							<div class="register-box-con2-box-upload-ti"><em id="reg_info_file_w">上传</em><img id="reg_info_file_base64" style="display:none;"></div>
+						</label>
+						<p class="register-box-con2-box-pw">1.支持图片格式JPG/PNG，图片大小不超过2M</p>
+						<p class="register-box-con2-box-pw">2.上传图片，便于联系发布者进行审核等重要事项</p>
+						<label class="err err-top160" id="reg_info_file_text">支持图片格式JPG/PNG，图片大小不超过2M</label>
+					</div>
+				</div>
+				<div class="register-box-con2-box clearfix mar-bottom20 mar-top50">
+					<label class="register-box-con2-box-left"></label>
+					<div class="register-box-con2-box-right">
+						<input type="submit" value="发布任务" class="login-box-cen-form-button w380" id="reg_info_submit" />
+					</div>
+				</div>
+				
+			</div>
+		</div>        	
+	</div>	
+</div>
+<br /><br />
+</div>
+<script type="text/javascript" src="js/task/a_t_jquery.min.js"></script>  
+<script type="text/javascript" src="js/task/a_t_tbdValidate.js"></script>  
+<script type="text/javascript" src="js/task/a_t_upload.js"></script>
+<script>
+  $(function(){
+		//demo
+		var regconfig=[
+				{eleinput:"reg_info_company",eletext:"reg_info_company_text",rule:[{reg:/^.+$/,text:"学校名称不能为空"},{reg:/^.{1,20}$/,text:"学校名称不超过20个字"}]},
+				{eleinput:"reg_info_name",eletext:"reg_info_name_text",rule:[{reg:/^.+$/,text:"联系人不能为空"},{reg:/^.{1,20}$/,text:"联系人不超过20个字"}]},
+				{eleinput:"reg_info_email",eletext:"reg_info_email_text",rule:[{reg:/^.+$/,text:"Email地址不能为空"},{reg:/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,text:"Email地址格式错误"}]}
+			];
+		tbdValidate(
+			regconfig,
+			{
+				elesubmit:"reg_info_submit",//提交按钮
+				funsubmit:function(){//验证通过可提交回调
+					if($("#reg_info_file_base64").attr("src")){
+						$("#reg_info_file_text").hide();
+					}else{
+						$("#reg_info_file_text").html('请上传名片').show();
+						return false;
+					};	
+					//信息提交接口
+					alert("成功");			
+				},
+				funerr:function(){//不可提交回调
+					if($("#reg_info_file_base64").attr("src")){
+						$("#reg_info_file_text").hide();
+					}else{
+						$("#reg_info_file_text").html('请上传名片').show();
+						return false;
+					};	
+				},
+				funerrlist:function(errlist){
+					$('#'+ errlist[0]).focus();
+				}	
+			}
+		);
+		
+		var noregconfig=[
+				{eleinput:"reg_info_www",eletext:"reg_info_www_text",rule:[{reg:/(^(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$)|(^$)/,text:"请输入正确的网址"}]},
+				{eleinput:"reg_info_address",eletext:"reg_info_address_text",rule:[{reg:/^.{0,40}$/,text:"公司所在地址，不超过40个字"}]},
+				{eleinput:"reg_info_textarea",eletext:"reg_info_textarea_text",rule:[{reg:/^.{0,200}$/,text:"简介不超过200个字"}]}
+			];
+		tbdnoValidate(noregconfig);
+//end	
+	});
+</script>
+<div style="text-align:center;margin:-150px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+</body>
+</html>

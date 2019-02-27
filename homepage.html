@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container"> 
+        <div id="app">
+            <div class="main" >
+                <div class="box-0"><!--children[0]-->
+                    <div class="home_head"><!--children[0]-->
+                        <div class="my_home "><!--children[0]-->
+                            <a class="user_photo" href="" ><!--children[0]-->
+                                <!-- <img src={{shcimg}}> -->
+                            </a>
+                            <div class="user_name"><!--children[1]-->
+                                <a href="" class="u_name">{{shcname}}</a>
+                            </div>
+                        </div>
+                        <div class=" my_wallet  "><!--children[1]-->
+                            <div class="m_w">
+                                <h3>个人钱包</h3>
+                            </div>
+                            <div class="m_i"><!--children[1]-->
+                                <div class="num" >
+                                    <a href="" style="color:red;">{{shcintegral}}</a>
+                                </div>
+                                <div class="i_name">积分</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="home_body">
+                        <div class="my_task">
+                            <h3>我的任务</h3>
+                        </div>
+                        <div class="detail_task">
+                            <div >
+                                <a href="#completed"  data-toggle="collapse" class="btn btn-success" >我完成的任务</a>
+                                <a href="#apply" data-toggle="collapse" class="btn btn-success">我申请的任务</a>
+                                <a href="#publish" data-toggle="collapse" class="btn btn-success">我发布的任务</a>
+                                <a href="#unfinished" data-toggle="collapse" class="btn btn-success">待完成的任务</a>
+                                <!-- <a href="#evaluate"data-toggle="collapse" class="btn btn-success">待评价的任务</a> -->
+                                <a href="#goods" data-toggle="collapse" class="btn btn-success">我兑换的商品</a>
+                                <!-- <a href="#invite" data-toggle="collapse" class="btn btn-success">我的邀请信息</a> -->
+                                <div class="collapse" id="completed">
+                                                <ul>
+                                                    <!-- <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text">
+                                                                非常感谢你帮助我们完成这个任务，没有你我们都不知道怎么办，希望下次继续合作。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">完成时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-17 12:22:39</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                                查看详情
+                                                            </a> 
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="非常感谢你帮助我们完成这个任务，没有你我们都不知道怎么办，希望下次继续合作。">
+                                                                非常感谢你帮助我们完成这个任务，没有你我们都不知道怎么办，希望下次继续合作。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">完成时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="非常感谢你帮助我们完成这个任务，没有你我们都不知道怎么办，希望下次继续合作。">
+                                                                非常感谢你帮助我们完成这个任务，没有你我们都不知道怎么办，希望下次继续合作。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">完成时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li> -->
+                                                </ul>
+                                </div>
+                                <div class="collapse" id="apply">
+                                                <ul>
+                                                    <!-- <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title=" 小姐姐，我非常想参加你们的任务，能不能给个机会展示一下我自己，保证让你们满意。">
+                                                                小姐姐，我非常想参加你们的任务，能不能给个机会展示一下我自己，保证让你们满意。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">申请时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-17 12:22:39</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                                查看详情
+                                                            </a> 
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title=" 小姐姐，我非常想参加你们的任务，能不能给个机会展示一下我自己，保证让你们满意。">
+                                                                    小姐姐，我非常想参加你们的任务，能不能给个机会展示一下我自己，保证让你们满意。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">申请时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title=" 小姐姐，我非常想参加你们的任务，能不能给个机会展示一下我自己，保证让你们满意。">
+                                                                    小姐姐，我非常想参加你们的任务，能不能给个机会展示一下我自己，保证让你们满意。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">申请时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li> -->
+                                                </ul>
+                                </div>
+                                <div class="collapse" id="publish">
+                                                <ul>
+                                                    <!-- <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="有没有哪位小哥哥或小姐姐，能帮帮我，必有重谢">
+                                                                有没有哪位小哥哥或小姐姐，能帮帮我，必有重谢。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">发布时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-17 12:22:39</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                                查看详情
+                                                            </a> 
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="有没有哪位小哥哥或小姐姐，能帮帮我，必有重谢">
+                                                                    有没有哪位小哥哥或小姐姐，能帮帮我，必有重谢
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">发布时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="有没有哪位小哥哥或小姐姐，能帮帮我，必有重谢">
+                                                                    有没有哪位小哥哥或小姐姐，能帮帮我，必有重谢
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">发布时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li> -->
+                                                </ul>
+                                </div>
+                                <div class="collapse" id="unfinished">
+                                                <ul>
+                                                    <!-- <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="骚年，你的任务有点难的，在给我点时间，容我好好查查，我一定给你完成的漂漂亮亮的。">
+                                                                骚年，你的任务有点难的，在给我点时间，容我好好查查，我一定给你完成的漂漂亮亮的。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">截止任务时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-17 12:22:39</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                                查看详情
+                                                            </a> 
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="骚年，你的任务有点难的，在给我点时间，容我好好查查，我一定给你完成的漂漂亮亮的。">
+                                                                    骚年，你的任务有点难的，在给我点时间，容我好好查查，我一定给你完成的漂漂亮亮的。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">截止任务时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="骚年，你的任务有点难的，在给我点时间，容我好好查查，我一定给你完成的漂漂亮亮的。">
+                                                                    骚年，你的任务有点难的，在给我点时间，容我好好查查，我一定给你完成的漂漂亮亮的。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">截止任务时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li> -->
+                                                </ul>
+                                </div>
+                                <!-- <div class="collapse" id="evaluate">
+                                                <ul>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="小哥哥，你的任务我历经千辛万苦终于完成了，你赶快看一下怎么样。">
+                                                                小哥哥，你的任务我历经千辛万苦终于完成了，你赶快看一下怎么样。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">评价时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-17 12:22:39</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                                查看详情
+                                                            </a> 
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="小哥哥，你的任务我历经千辛万苦终于完成了，你赶快看一下怎么样。">
+                                                                    小哥哥，你的任务我历经千辛万苦终于完成了，你赶快看一下怎么样。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">评价时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="小哥哥，你的任务我历经千辛万苦终于完成了，你赶快看一下怎么样。">
+                                                                    小哥哥，你的任务我历经千辛万苦终于完成了，你赶快看一下怎么样。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">评价时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                </div> -->
+                                <div class="collapse" id="goods">
+                                                <ul>
+                                                    <!-- <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="你们的商品非常好，我非常喜欢，好想再有一个。">
+                                                                你们的商品非常好，我非常喜欢，好想再有一个。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">兑换时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-17 12:22:39</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                                查看详情
+                                                            </a> 
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="你们的商品非常好，我非常喜欢，好想再有一个。">
+                                                                    你们的商品非常好，我非常喜欢，好想再有一个。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">兑换时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li >
+                                                        <a href="" class="good" >
+                                                            <img alt="" class="lrc-image  img-loaded" title="" src="img/header/task_photo.jpg">
+                                                        </a>
+                                                        <div class="state" >
+                                                            <div class="text" title="你们的商品非常好，我非常喜欢，好想再有一个。">
+                                                                    你们的商品非常好，我非常喜欢，好想再有一个。
+                                                            </div>
+                                                            <div class="other">
+                                                                <div class="type">兑换时间</div>
+                                                                <span class="spacer"></span>
+                                                                <div class="date">2018-12-16 15:35:08</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="operate">
+                                                            <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                                查看详情
+                                                            </a>
+                                                        </div>
+                                                    </li> -->
+                                                </ul>
+                                </div>
+                                <!-- <div class="collapse" id="invite">
+                                        <ul>
+                                            <li >
+                                                <a href="" class="good" >
+                                                    <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                </a>
+                                                <div class="state" >
+                                                    <div class="text" title="观你骨骼惊奇，天资聪颖，同学有没有兴趣来加入我们一起完成这个任务。">
+                                                        观你骨骼惊奇，天资聪颖，同学有没有兴趣来加入我们一起完成这个任务。
+                                                    </div>
+                                                    <div class="other">
+                                                        <div class="type">邀请时间</div>
+                                                        <span class="spacer"></span>
+                                                        <div class="date">2018-12-17 12:22:39</div>
+                                                    </div>
+                                                </div>
+                                                <div class="operate">
+                                                    <a class="link" href="" target="_blank" rel="noopener noreferrer" >
+                                                        查看详情
+                                                    </a> 
+                                                </div>
+                                            </li>
+                                            <li >
+                                                <a href="" class="good" >
+                                                    <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                </a>
+                                                <div class="state" >
+                                                    <div class="text" title="观你骨骼惊奇，天资聪颖，同学有没有兴趣来加入我们一起完成这个任务。。">
+                                                            观你骨骼惊奇，天资聪颖，同学有没有兴趣来加入我们一起完成这个任务。
+                                                    </div>
+                                                    <div class="other">
+                                                        <div class="type">邀请时间</div>
+                                                        <span class="spacer"></span>
+                                                        <div class="date">2018-12-16 15:35:08</div>
+                                                    </div>
+                                                </div>
+                                                <div class="operate">
+                                                    <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                        查看详情
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li >
+                                                <a href="" class="good" >
+                                                    <img alt="" class="lrc-image  img-loaded" title="" src="../img/header/task_photo.jpg">
+                                                </a>
+                                                <div class="state" >
+                                                    <div class="text" title="观你骨骼惊奇，天资聪颖，同学有没有兴趣来加入我们一起完成这个任务。">
+                                                            观你骨骼惊奇，天资聪颖，同学有没有兴趣来加入我们一起完成这个任务。
+                                                    </div>
+                                                    <div class="other">
+                                                        <div class="type">邀请时间</div>
+                                                        <span class="spacer"></span>
+                                                        <div class="date">2018-12-16 15:35:08</div>
+                                                    </div>
+                                                </div>
+                                                <div class="operate">
+                                                    <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                                                        查看详情
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/homepage.js"></script>
+    <script src="js/vue.js"></script>
+</body>
+</html>

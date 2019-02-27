@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>Title</title>
+  <link rel="stylesheet" href="css/a_t.css" />
+</head>
+<body>
+<div class="container">
+  <h4 style="font-size:16px; text-align:center; font-weight:bold;">登录界面</h4>
+<br /><br />
+<!--中心-->
+<div class="content">
+	<div class="login-box">
+		<div class="wrap">
+			<div class="login-box-cen">
+				<br /><br />
+				<div class="login-box-cen-form clearfix mar-bottom20">
+					<input type="text" class="login-box-cen-form-input w218" placeholder="请输入手机号" id="login_phone" />
+					<label class="err err-top40" id="login_phone_text">手机号错误</label>
+				</div>
+				<div class="login-box-cen-form clearfix mar-bottom20">
+					<input type="text" class="login-box-cen-form-input w218" placeholder="请输入密码" id="login_password" />
+					<label class="err err-top40" id="login_password_text">请输入密码</label>
+				</div>
+				<div class="login-box-cen-form clearfix">
+					<input type="submit" value="登录" class="login-box-cen-form-button w218" id="login_submit" />
+				</div>
+			</div>
+		</div>
+	</div>    
+</div>
+<br /><br />
+
+</div>
+<script type="text/javascript" src="js/task/a_t_jquery.min.js"></script>  
+<script type="text/javascript" src="js/task/a_t_tbdValidate.js"></script>  
+<script type="text/javascript" src="js/task/a_t_upload.js"></script> 
+<script>
+  $(function(){
+		//demo
+		var regconfig=[
+				{eleinput:"login_phone",eletext:"login_phone_text",rule:[{reg:/^.+$/,text:"手机号不能为空"},{reg:/^1[34578]\d{9}$/,text:"手机号格式错误"}]},
+				{eleinput:"login_password",eletext:"login_password_text",rule:[{reg:/^.+$/,text:"密码不能为空"}]}
+			];
+		tbdValidate(
+			regconfig,
+			{
+				elesubmit:"login_submit",//提交按钮
+				funsubmit:function(){//验证通过可提交回调				
+					//信息提交接口
+					alert("成功");				
+				},
+				funerr:function(){//不可提交回调
+					
+				},
+				funerrlist:function(errlist){
+					$('#'+ errlist[0]).focus();
+				}	
+			}
+		);	
+		//end
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/talent_details.css">
+</head>
+<body>
+    <div class="detail_head">
+        <h1 class="detail_name">
+            <a href="" >{{tname}}</a>
+        </h1>
+        <div class="detail_nav">
+            <ul class="detail_navtabs">
+                <li>
+                    <a href="#">概述</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="person_main">
+        <div class="person_detail">
+            <div class="person_detail_left">
+                <div class="person_photo">
+                    <a href="" >
+                        <!--<img src="img/person/xiaoxiao.jpg" alt="">-->
+                    </a>
+                </div>
+                <ul class="infobox">
+                    <li>姓名：
+                        <span class="detail_info">{{tname}}</span>
+                        
+                    </li>
+                    <li>别名：
+                        <span class="detail_info">{{toname}}</span>
+                    </li>
+                    <!-- <li>
+                        <span class="detail_info" style="visibility: hidden;">别名：</span>
+                        "xiaoai"
+                    </li> -->
+                    <li>性别：
+                        <span  class="detail_info">{{tsex}}</span>
+                    </li>
+                    <li>生日：
+                        <span  class="detail_info">{{tbirthday}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="person_detail_right" id="columnA">
+                <div class="person_school">
+                    <h2 class="school_name">学校：
+                        {{tschool}}
+                    </h2>
+                </div>
+                <div class="person_detail_info">{{tdetails}}</div>
+                <h2 class="new_task">最近参与任务</h2>
+                <ul class="new_task_list">
+                    <!-- <li>
+                        <div>
+                            <a href="">
+                                <img src="img/person/zuoping1.jpg" alt="">
+                            </a>
+                            <div>
+                                <h3>
+                                    <a href="">校园歌唱大赛</a>
+                                    <p>歌手</p>
+                                </h3>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+                <h2 class="old_task">参加过得任务</h2> 
+                <ul class="old_task_list">
+                    <!-- <li class="old_list_item">
+                        <div>
+                            <a href="">
+                                <img src="img/person/zuoping1.jpg" alt="">
+                            </a>
+                            <div>
+                                <a href=""><b>第二届青春杯校园歌唱大赛</b></a>
+                                <p class="player">歌手</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="old_list_item">
+                        <div>
+                            <a href="">
+                                <img src="img/person/zuoping2.jpg" alt="">
+                            </a>
+                            <div>
+                                <a href=""><b>第三届青春杯校园歌唱大赛</b></a>
+                                <p class="player">歌手</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="old_list_item">
+                        <div>
+                            <a href="">
+                                <img src="img/person/zuoping3.jpg" alt="">
+                            </a>
+                            <div>
+                                <a href=""><b>第三届青春杯校园歌唱大赛</b></a>
+                                <p class="player">歌手</p>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="container"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/talent_details.js"></script>
+    <script src="js/vue.js"></script>
+</body>
+</html>

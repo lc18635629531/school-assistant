@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>Title</title>
+  <link rel="stylesheet" href="css/product_details.css">
+</head>
+<body>
+<header id="header" class="container">
+</header>
+<main id="main" class="container">
+  <div><!--children[0]-->
+    <!--头-->
+    <nav aria-label="breadcrumb"><!--children[0]-->
+      <ol class="breadcrumb small bg-transparent"><!--children[0]-->
+        <li class="breadcrumb-item"><a class="text-dark font-weight-bold small product_detail_wenzi" href="#">首页</a></li>
+        <li class="breadcrumb-item"><a class="text-dark font-weight-bold small product_detail_wenzi" href="#">电子数码</a></li>
+        <li class="breadcrumb-item text-dark font-weight-bold small active product_detail_wenzi" aria-current="page">{{pname}}</li> 
+      </ol>
+    </nav>
+    <!--身体-->
+    <div class="body row"><!--children[1]-->
+      <!--左边-->
+      <div class="left col-4 mr-5 p-0"><!--children[0]-->
+        <!-- <div class="photo_md">
+          <a href=""></a>
+            <img src="img/mall/product_detail/md/chuifengji_md1.jpg" class="position-relative" alt="">
+          </a>
+        </div>
+				<div id="mask" class="position-absolute d-none"  ></div>
+        <div id="super-mask"class="position-absolute" style="top:430px;left:310px;"></div>
+        <div id="div-lg" class="position-absolute d-none" style="top:430px;left:800px; " ></div>
+        <div class="photo_sm">
+          <div class="photo_sm_list">
+            <a href="" class="left_arrow"></a>
+            <div class="photo_sm_show">
+              <img src="img/mall/product_detail/left.png" alt="" class="btn float-left btn-light disabled border-0 ">
+              <div class="photo_sm_total"> -->
+                <!--<img src="img/mall/product_detail/sm/chongdianbao_sm1.jpg"  data-md="img/mall/product_detail/md/chongdianbao_md1.jpg" data-lg="img/mall/product_detail/lg/chongdianbao_lg1.jpg"alt="">
+                <img src="img/mall/product_detail/sm/chongdianbao_sm2.jpg"  data-md="img/mall/product_detail/md/chongdianbao_md2.jpg" data-lg="img/mall/product_detail/lg/chongdianbao_lg2.jpg"alt="">
+                <img src="img/mall/product_detail/sm/chongdianbao_sm3.jpg"  data-md="img/mall/product_detail/md/chongdianbao_md3.jpg" data-lg="img/mall/product_detail/lg/chongdianbao_lg3.jpg"alt="">
+                <img src="img/mall/product_detail/sm/chongdianbao_sm4.jpg"  data-md="img/mall/product_detail/md/chongdianbao_md4.jpg" data-lg="img/mall/product_detail/lg/chongdianbao_lg4.jpg"alt="">
+                <img src="img/mall/product_detail/sm/chongdianbao_sm5.jpg"  data-md="img/mall/product_detail/md/chongdianbao_md5.jpg" data-lg="img/mall/product_detail/lg/chongdianbao_lg5.jpg"alt="">-->
+              <!-- </div>
+              <img src="img/mall/product_detail/right.png" alt="" class="btn float-right btn-light border-0">
+            </div>
+            <a href="" class="right_arrow"></a>
+          </div>
+        </div> -->
+        <div id="preview" class=" p-0 m-0">
+            <div class="card bg-transparent  position-absolute">
+              <img class="card-img-top" src="img/mall/product_detail/md/chuifengji_md1.jpg" alt="Card image cap">
+              <div id="mask" class="position-absolute d-none"></div>
+              <div id="super-mask" class="position-absolute"></div>
+              <div id="div-lg" class="position-absolute d-none "></div>
+              <div class="card-body p-0 text-center">
+                <img src="img/mall/product_detail/left.png" class="btn float-left btn-light border-0 p-1 pt-4 pb-4 disabled">
+                <div class="d-inline-block pt-2 mx-0 m-auto">
+                  <!-- <ul class="list-unstyled mb-0"> -->
+                  <ul class="list-unstyled mb-0">
+                    <!--<li class="float-left p-1">
+                      <img src="img/product/sm/" data-md="img/product/md/" data-lg="img/product/lg/">
+                    </li>-->
+                  </ul>
+                </div>
+                <img src="img/mall/product_detail/right.png" class="btn float-right btn-light border-0 p-1 pt-4 pb-4">
+              </div>
+            </div>
+          </div>
+        <div class="cankao">
+          <span style="font-size:10px;">图片仅供参考，实际兑换礼品请以实物或您获取的服务为准</span>
+        </div>
+      </div>
+      <!--中间-->
+      <div class="center col-4 mr-3 p-0"><!--children[1]-->
+        <p class="product_detail_title">{{subtitle}}</p><!--children[0]-->
+        <p style="font-size:10px; color:red;">提示：产品如有质量问题或使用咨询，
+          请拨打售后服务热线：010-001-0110</p>
+        <div class="integral mt-5"><!--children[2]-->
+          <div><!--children[0]-->
+            <span>积&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：</span><!--children[0]-->
+            <span class="integral_border" >
+              <span class="integral_count">{{integral}}</span>
+            </span>
+          </div>
+        </div>
+        <!--地址-->
+        <div class="area mt-5"><!--children[3]-->
+          <span>配&nbsp;&nbsp;送&nbsp;&nbsp;至：</span>
+          <span class="address">
+            <input type="text" placeholder="请填写详细地址">
+          </span>
+        </div>
+        <!--规格样式属性-->
+        <div class="mt-5"><!--children[4]-->
+          <span>已选择规格：</span><!--children[0]-->
+          <span class="style_border text-center"><!--children[1]-->
+            <a href="" class="style_text ">{{spec}}</a><!--children[0]-->
+          </span>
+        </div>
+        <div class="mt-5"><!--children[5]-->
+          <span>已选择样式：</span>
+            <span class="style_border text-center">
+              <a href="" class="style_text ">{{color}}</a>
+            </span>
+        </div>
+        <!-- 已选择文本
+        <div class="text-center mt-3">
+          <span style="font-size:10px; color:red;">已选择："10000mah聚合物移动电源","白色"</span>
+        </div> -->
+        <!--数量选择-->
+        <div class="mt-5">
+          <span class="float-left">选择数量：</span>
+          <div class="count">
+            <div >
+              <a href="" class="num_bt">-</a>
+              <input type="text" value="1" class="input_text text-center">
+              <a href="" class="num_bt">+</a>
+            </div>
+          </div>
+        </div>
+        <!--加入按钮-->
+        <div class="mt-5">
+          <a href="cart.html" class="exchange_btn">加入购物车</a>
+        </div>
+      </div>
+      <!--右边-->
+      <div class="right col-3 m-0 p-0"><!--children[2]-->
+        <!--上标题-->
+        <div class="right_title">
+          <div class="right_title_word">
+            <a href="">
+              <p>罗马仕</p>
+            </a>
+          </div>
+        </div>
+        <!--下内容-->
+        <div class="products">
+          <p>
+            <span>同类推荐</span>
+          </p>
+          <div class="product_pic">
+            <p>
+              <a href="">
+                <img src="img/mall/product_detail/chongdianbao_right1.jpg" alt="">
+              </a>
+            </p>
+            <a href="" class="product_pic_word">积分：
+              <p>5000</p>
+            </a>
+          </div>
+          <div class="product_pic">
+            <p>
+              <a href="">
+                <img src="img/mall/product_detail/chongdianbao_right2.jpg" alt="">
+              </a>
+            </p>
+            <a href="" class="product_pic_word">积分：
+              <p>5000</p>
+            </a>
+          </div>
+          <div class="product_pic">
+            <p>
+              <a href="">
+                <img src="img/mall/product_detail/chongdianbao_right3.jpg" alt="">
+              </a>
+            </p>
+            <a href="" class="product_pic_word">积分：
+              <p>5000</p>
+            </a>
+          </div>
+          <div class="product_pic">
+            <p>
+              <a href="">
+                <img src="img/mall/product_detail/chongdianbao_right4.jpg" alt="">
+              </a>
+            </p>
+            <a href="" class="product_pic_word">积分：
+              <p>5000</p>
+            </a>
+          </div>
+          <div class="product_pic">
+            <p>
+              <a href="">
+                <img src="img/mall/product_detail/chongdianbao_right5.jpg" alt="">
+              </a>
+            </p>
+            <a href="" class="product_pic_word">积分：
+              <p>5000</p>
+            </a>
+          </div>
+          <div class="product_pic">
+            <p>
+              <a href="">
+                <img src="img/mall/product_detail/chongdianbao_right6.jpg" alt="">
+              </a>
+            </p>
+            <a href="" class="product_pic_word">积分：
+              <p>5000</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--尾-->
+    <div class="product_details_tail tab-pane"><!--children[2]-->
+      <ul class="product_details_tail_title nav nav-tabs">
+        <li class="nav-item"><a href="#product_js" class="nav-link active" data-toggle="tab">商品介绍</a></li>
+        <li class="nav-item"><a href="#product_pj" class="nav-link" data-toggle="tab">商品评价</a></li>
+        <li class="nav-item"><a href="#product_cs" class="nav-link" data-toggle="tab">规格参数</a></li>
+      </ul>
+      <div class="tab-content"><!--children[1]-->
+      <!--商品介绍-->
+        <div class="product_introduce tab-pane active" id="product_js">
+          <div>
+            <!--<img src="img/mall/product_detail/chongdinbao_detail_lg.jpg" alt="">-->
+          </div>
+        </div>
+      <!--商品评价-->
+        <div class="product_evaluate tab-pane" id="product_pj">
+          <div class="evaluate">
+            <ul>
+              <li>好评度</li>
+              <li class="evaluate_count">73%</li>
+              <li>20人参与</li>
+            </ul>
+            <div class="evaluate_language">
+              <span>质量精良（2）</span>
+              <span>品质保障（2）</span>
+              <span>大气上档次（1）</span>
+              <span>收到损坏的货物（1）</span>
+              <span>质量一般（1）</span>
+              <span>无法使用（1）</span>
+            </div>
+          </div>
+        </div>
+      <!--规格参数-->
+        <div class="product_standard tab-pane" id="product_cs"><!--children[2]-->
+          <div><!--children[0]-->
+            <table><!--children[0]-->
+              <tbody><!--children[0]-->
+                <tr><!--children[0]-->
+                  <th>商品概述</th>
+                  <td>{{details}}</td>
+                </tr>
+                <tr><!--children[1]-->
+                  <th>商品保修</th>
+                  <td>
+                    {{promise}}
+                  </td>
+                </tr>
+                <tr><!--children[2]-->
+                  <th>产地</th>
+                  <td>
+                    {{area}}
+                  </td>
+                </tr>
+                <tr><!--children[3]-->
+                  <th>包装清单</th>
+                  <td>{{lists}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </div>
+</main>
+<footer id="footer" class="container">
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script src="js/product_details.js"></script>
+<script src="js/vue.js"></script>
+</body>
+</html>
+
+
+
+

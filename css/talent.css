@@ -1,0 +1,83 @@
+
+    *{
+        padding:0;
+        margin:0;
+    }
+    #container{
+        max-width:1024px;
+        margin:0 auto;
+    }
+    .nav_bar{
+        width:100%;
+        height:50px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        border:1px solid #ddd;
+    }
+    .nav_item{
+        width:150px;
+        height:30px;
+        display: inline-block;
+        list-style: none;
+        font-size: 20px;
+        border:1px solid #5aa1ed;
+        border-radius: 20%;
+        background: #5aa1ed;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .nav_item>a{
+        text-decoration: none;
+    }
+    #study,#hobby,#life{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width:1024px;
+        height:800px;
+    }
+    .private_title{
+        font-size: 32px;
+        color:slategray;
+        text-shadow:2px 2px 0px slateblue;
+    }
+    .private_card{
+        width:250px;
+        height:400px;
+        margin-right: 3px;
+        float:left;
+        text-align: center;
+        border:1px solid #eee;
+        box-shadow:5px 5px 5px -3px #ddd;
+    }
+    .private_photo{
+        
+    }
+    .photo{
+        width:100%;
+    }
+    .private_details{
+
+    }
+    .private_name,.private_school,.private_remark{
+        margin-bottom: 5px;
+    }
+    .private_apply{
+        width:100px;
+        height:40px;
+        border-radius: 25%;
+        background: orange;
+    }
+    #to_top{
+        display: block;
+        width:40px;
+        height: 40px;
+        position:fixed;
+        right:30px;
+        bottom:30px;
+        background:url(img/person/to_top.png)  no-repeat  left top ;
+    }
+    #to_top:hover {
+        background:url(img/person/to_top.png)  no-repeat  left -40px;
+    }
+ 

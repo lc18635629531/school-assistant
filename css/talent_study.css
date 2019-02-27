@@ -1,0 +1,63 @@
+
+._citys {width:100%; height:100%;display: inline-block; position: relative;}
+._citys span {color: #56b4f8; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 1em; top: 10px; border: 1px solid #56b4f8; cursor: pointer;}
+._citys0 {width: 100%; height: 34px; display: inline-block; border-bottom: 2px solid #56b4f8; padding: 0; margin: 0;}
+._citys0 li {float:left; height:34px;line-height: 34px;overflow:hidden; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+.citySel {background-color: #56b4f8; color: #fff !important;}
+._citys1 {width: 100%;height:80%; display: inline-block; padding: 10px 0; overflow: auto;}
+._citys1 a {height: 35px; display: block; color: #666; padding-left: 6px; margin-top: 3px; line-height: 35px; cursor: pointer; font-size: 13px; overflow: hidden;}
+._citys1 a:hover { color: #fff; background-color: #56b4f8;}
+.ui-content{border: 1px solid #EDEDED;}
+li{list-style-type: none;}
+
+/* beijing */
+body{
+    background: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 992px) {
+    .my_header{
+        width: 100%;
+    }
+    .my_footer{
+        width: 100%;
+        height: 23rem;
+    }
+}
+@media screen and (min-width: 576px) {
+    .my_header{
+        width: 100%;
+        height: 14rem;
+    }
+    .my_footer{
+        width: 100%;
+        height: 40rem;
+    }
+}
+/* tupian */
+#my_tupian .carousel-indicators li{
+    width: 4rem;
+    height: 0.6rem;
+
+}
+#my_tupian .carousel-indicators .active{
+    background: #0aa1ed;
+}
+#my_tupian .carousel-control-prev,
+#my_tupian .carousel-control-next{
+    width: 5%;
+    height:20%;
+    top: 45%;
+    background: #dddddd;
+}
+div.container .row .col-lg-6 div.mt-4 div{
+    width:255px;
+}
+div.container .row .col-lg-6 div.datu img{
+    height:564px;
+}
+div.container div.my_beijing img{
+    width:100%;
+    height:500px;
+}

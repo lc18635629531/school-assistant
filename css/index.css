@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+}
+.yinying {
+    padding:32px 0;
+  }
+ .my_wenzi{
+     list-style: none;
+ }
+ .nuanxing,.qita{
+     text-align: center;
+ }
+.nuanxing>img,.qita>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.behind div{
+    width:255px;
+    height:203px;
+    float:left;
+}
